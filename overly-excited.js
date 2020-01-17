@@ -29,4 +29,4 @@ function addExcitement (theWordArray, character, numOfTimes) {
 
 }
 
-addExcitement(sentence, "?")
+addExcitement(sentence, "?", 2)
