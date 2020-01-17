@@ -15,9 +15,16 @@ function addExcitement (theWordArray) {
 
             Otherwise, just concatenate the word itself.
          */
-
+        if (i === 0) {
+            buildMeUp += sentence[i] + " ";
+        } else if (i !== 0 && (i + 1) % 3 === 0) {
+            buildMeUp += sentence[i] + "! ";
+        } else {
+            buildMeUp += sentence[i] + " ";
+        }
 
         // Print buildMeUp to the console
+        console.log(buildMeUp)
     }
 
 }
