@@ -3,7 +3,7 @@
 // Create an array that contains the words in the sentence
 let sentence = ["The","walrus","danced","through","the","trees","in","the","light","of","the","moon"];
 
-function addExcitement (theWordArray, character) {
+function addExcitement (theWordArray, character, numOfTimes) {
     let buildMeUp = ""
 
     for (let i = 0; i < theWordArray.length; i++) {
@@ -18,7 +18,7 @@ function addExcitement (theWordArray, character) {
         if (i === 0) {
             buildMeUp += sentence[i] + " ";
         } else if (i !== 0 && (i + 1) % 3 === 0) {
-            buildMeUp += sentence[i] + character + " ";
+            buildMeUp += sentence[i] + character.repeat(numOfTimes) + " ";
         } else {
             buildMeUp += sentence[i] + " ";
         }
