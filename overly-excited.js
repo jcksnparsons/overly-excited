@@ -15,9 +15,7 @@ const addExcitement = (theWordArray, character, numOfTimes) => {
 
             Otherwise, just concatenate the word itself.
          */
-        if (i === 0) {
-            buildMeUp += sentence[i] + " ";
-        } else if (i !== 0 && (i + 1) % 3 === 0) {
+        if (i !== 0 && (i + 1) % 3 === 0) {
             buildMeUp += sentence[i] + character.repeat(numOfTimes) + " ";
         } else {
             buildMeUp += sentence[i] + " ";
@@ -29,4 +27,4 @@ const addExcitement = (theWordArray, character, numOfTimes) => {
 
 }
 
-addExcitement(sentence, "*", 4)
+addExcitement(sentence, "!", 1)
